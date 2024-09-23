@@ -16,12 +16,14 @@ public class Test {
         dda.insert(2,1,5);
         dda.insert(2,2,7);
         // Traversing the array
+        System.out.println("Traversing the array:");
         dda.traverse();
-        // // Traversing the array
-        // dda.traverse();
-        // // Searching for a value
-        // dda.search(20);
-        // // Deleting a value
-        // dda.delete(0,2);
+        // Searching for a value
+        System.out.println("Searching for a value:");
+        dda.search(6);
+        dda.search(20);
+        // Deleting a value
+        System.out.println("Deleting a value:");
+        dda.delete(0,2);
     }       
 }
