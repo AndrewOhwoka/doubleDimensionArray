@@ -1,10 +1,9 @@
 public class DoubleDimensionalArray {
-    int[][] arr;  // Declare the 2D array
+    int[][] arr;  
 
-    // Constructor to create the 2D array with given rows and columns
+    
     public DoubleDimensionalArray(int rows, int cols) {
-        arr = new int[rows][cols];  // Initialize the 2D array with the given size
-        // Fill the array with a default value, say Integer.MIN_VALUE to represent empty cells
+        arr = new int[rows][cols];  
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 arr[i][j] = Integer.MIN_VALUE;
@@ -12,11 +11,11 @@ public class DoubleDimensionalArray {
         }
     }
 
-    // Method to insert a value into a specific index (row, column)
+   
     public void insert(int row, int col, int value) {
         try {
             if (arr[row][col] == Integer.MIN_VALUE) {
-                arr[row][col] = value;  // Insert the value if the cell is empty
+                arr[row][col] = value; 
                 System.out.println("Successfully inserted " + value + " at (" + row + "," + col + ")");
             } else {
                 System.out.println("Cell at (" + row + "," + col + ") is already occupied.");
